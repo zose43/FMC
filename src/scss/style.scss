@@ -1,0 +1,119 @@
+* {
+  font-family: "Roboto Light", "Roboto Regular", "Roboto Bold", "Roboto Black",
+    sans-serif;
+}
+@import "_mixin";
+@import "_values";
+/* Country */
+.country {
+  min-height: 85px;
+  padding: 19px 77px;
+  display: flex;
+  .item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 33px;
+    &:nth-child(5) {
+      margin-right: 0;
+    }
+    &-img {
+      margin-right: 11px;
+    }
+    &-header {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      color: $blacktext;
+    }
+    &-descr {
+      margin-top: 4px;
+      font-size: 11px;
+      font-weight: 300;
+      color: $blacktext;
+      line-height: 18px;
+      a {
+        color: $blacktext;
+        &:hover {
+          color: $blacktext;
+        }
+      }
+    }
+  }
+}
+/* Promo */
+.promo {
+  min-height: 673px;
+  padding: 39px 0 0 0;
+  background: url(../img/bg_promo.jpg) no-repeat;
+  background-size: cover;
+  .main {
+    &-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      &-list {
+        display: flex;
+        list-style: none;
+        li {
+          margin-right: 45px;
+          font-size: 13px;
+          line-height: 26px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $whitetext;
+          &:nth-child(5) {
+            margin-right: 0;
+          }
+          a {
+            color: $whitetext;
+            &:hover {
+              color: $whitetext;
+            }
+          }
+        }
+      }
+    }
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 56px;
+      .text {
+        margin-right: 40px;
+        &-header {
+          font-size: 42px;
+          line-height: 48px;
+          font-weight: 900;
+          color: $whitetext;
+        }
+        &-subheader {
+          margin-top: 27px;
+          font-size: 24px;
+          line-height: 30px;
+          font-weight: 300;
+          color: $whitetext;
+          span {
+            font-weight: 600;
+          }
+        }
+        &-btn {
+          margin-top: 35px;
+          box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
+          width: 249px;
+          height: 68px;
+          background-color: $btn;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 69px;
+          text-transform: uppercase;
+          color: $whitetext;
+          padding: 0 50px;
+        }
+      }
+    }
+  }
+}
+@import "_media";

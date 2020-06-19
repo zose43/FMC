@@ -116,4 +116,63 @@
     }
   }
 }
+/* Prengi */
+.prengi {
+  padding: 79px 0 81px 0;
+  min-height: 895px;
+  &-without {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      position: relative;
+      &-descr {
+        position: absolute;
+        bottom: 37px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 236px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: $greytext;
+        text-align: center;
+      }
+    }
+  }
+  &-arrows {
+    margin-top: 50px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &-header {
+    text-align: center;
+    margin-top: 33px;
+    font-size: 48.1px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $greytext;
+  }
+  &-with {
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+    .item {
+      position: relative;
+      &-descr {
+        position: absolute;
+        bottom: 37px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 236px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        color: $greytext;
+        text-align: center;
+      }
+    }
+  }
+}
 @import "_media";

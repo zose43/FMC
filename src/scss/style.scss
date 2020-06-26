@@ -47,6 +47,7 @@
   min-height: 673px;
   padding: 39px 0 0 0;
   background: url("..//img/bg_promo.jpg") center (center/cover) no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
   .main {
     &-nav {
       display: flex;
@@ -180,6 +181,7 @@
   min-height: 889px;
   padding: 79px 0 61px 0;
   background: url("..//img/bg_solutions.jpg") center (center/cover) no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
   &-header {
     text-align: center;
     font-size: 30px;
@@ -240,6 +242,207 @@
       right: 30px;
       top: 50%;
       transform: translateY(-50%);
+    }
+  }
+}
+/* Advantage */
+.advantage {
+  min-height: 1335px;
+  padding: 81px 0 81px 0;
+  &-header {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 900;
+    color: $greytext;
+  }
+  &-block {
+    margin-top: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    &-item {
+      position: relative;
+      .item-img {
+        display: block;
+        width: 555px;
+        height: 355px;
+      }
+      .item-descr {
+        position: absolute;
+        text-align: center;
+        font-size: 23px;
+        right: 50%;
+        top: 35%;
+        transform: translateX(50%);
+        line-height: 26px;
+        font-weight: 400;
+        color: $whitetext;
+      }
+    }
+  }
+}
+/* Storage */
+.storage {
+  min-height: 580px;
+  padding: 40px 0 27px 0;
+  background: url("../img/bg_date.jpg") center (center/cover) no-repeat;
+  background-color: rgba(0, 0, 0, 0.4);
+  &-header {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 900;
+    color: $whitetext;
+  }
+  .block {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .rBlock {
+      position: relative;
+      &-header {
+        text-align: left;
+        font-size: 30px;
+        line-height: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $whitetext;
+      }
+      &-descr {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: $whitetext;
+      }
+      .rCube {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 330px;
+        width: 167px;
+        height: 167px;
+        background: rgba($btn, 0.2);
+      }
+    }
+    .lBlock {
+      position: relative;
+      margin-right: 165px;
+      &-header {
+        text-align: right;
+        font-size: 30px;
+        line-height: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $whitetext;
+      }
+      &-descr {
+        margin-top: 20px;
+        text-align: right;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: $whitetext;
+      }
+      .lCube {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 330px;
+        width: 167px;
+        height: 167px;
+        background: rgba($btn, 0.2);
+      }
+    }
+  }
+}
+/* Feel-easy */
+.feelEasy {
+  min-height: 690px;
+  padding: 80px 0 76px 0;
+  &-img {
+    display: block;
+    margin: 0 auto;
+  }
+  &-header {
+    margin-top: 74px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+    color: $greytext;
+  }
+  &-btn {
+    margin: 0 auto;
+    margin-top: 35px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.07);
+    width: 249px;
+    height: 68px;
+    background-color: $btn;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 69px;
+    text-transform: uppercase;
+    color: $whitetext;
+    padding: 0 50px;
+  }
+}
+/* Footer */
+.footer {
+  min-height: 497px;
+  padding: 49px 0 40px 0;
+  background: $footerBg;
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    .item {
+      &-header {
+        text-align-last: left;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+        color: $whitetext;
+      }
+      &-img {
+        margin-top: 22px;
+      }
+      &-descr {
+        width: 90%;
+        margin-top: 22px;
+        text-align-last: left;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 19px;
+        color: $whitetext;
+      }
+      .shortDescr {
+        width: 57%;
+      }
+      .list {
+        margin-top: 22px;
+        list-style: none;
+        padding: 0;
+        &-link {
+          margin-top: 15px;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 19px;
+          color: $whitetext;
+        }
+      }
+    }
+    .mr {
+      margin-right: 100px;
+    }
+    .shortItem {
+      width: 51%;
     }
   }
 }
